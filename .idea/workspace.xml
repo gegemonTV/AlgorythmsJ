@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7323b165-b23b-400f-805e-2ba8e8820f0b" name="Changes" comment="added get method to LinkedList">
+    <list default="true" id="7323b165-b23b-400f-805e-2ba8e8820f0b" name="Changes" comment="added pop methods to LinkedList">
+      <change afterPath="$PROJECT_DIR$/src/sorts/SortUsage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorts/selection_sort/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_structures/DSUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_structures/DSUsage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data_structures/linked_list/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_structures/linked_list/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.DSUsage">
+  <component name="RunManager" selected="Application.SortUsage">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="search.BinarySearch" />
       <module name="Algorythms" />
@@ -63,8 +64,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortUsage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sorts.SortUsage" />
+      <module name="Algorythms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sorts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortUsage" />
         <item itemvalue="Application.DSUsage" />
         <item itemvalue="Application.BinarySearch" />
       </list>
@@ -114,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658390658000</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added pop methods to LinkedList">
+      <created>1658391668762</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658391668762</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +156,7 @@
     <MESSAGE value="Started creating LinkedList data structure" />
     <MESSAGE value="added add methods to LinkedList" />
     <MESSAGE value="added get method to LinkedList" />
-    <option name="LAST_COMMIT_MESSAGE" value="added get method to LinkedList" />
+    <MESSAGE value="added pop methods to LinkedList" />
+    <option name="LAST_COMMIT_MESSAGE" value="added pop methods to LinkedList" />
   </component>
 </project>

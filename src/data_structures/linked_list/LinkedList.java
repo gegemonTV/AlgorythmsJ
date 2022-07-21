@@ -3,7 +3,7 @@ package data_structures.linked_list;
 public class LinkedList<T> {
 
     Node<T> root;
-    int length = 0;
+    public int length = 0;
 
     public LinkedList() {
         root = new Node<>();
