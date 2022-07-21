@@ -25,7 +25,7 @@ public class LinkedList<T> {
     }
 
     public void add(int index, T element) {
-        if (index > length - 1)
+        if (index > length - 1 || index < 0)
             throw new IndexOutOfBoundsException("Index " + index + " out of range");
         Node<T> nextNode = root;
         for (int i = 0; i < index; i++){
@@ -34,7 +34,17 @@ public class LinkedList<T> {
         Node<T> tempNode = nextNode.copy();
         nextNode.current = element;
         nextNode.next = tempNode;
+        length++;
+    }
 
+    public T get(int index) {
+        if (index > length - 1 || index < 0)
+            throw new IndexOutOfBoundsException("Index " + index + " out of range");
+        Node<T> nextNode = root;
+        for (int i = 0; i < index; i++){
+            nextNode = nextNode.next;
+        }
+        return nextNode.current;
     }
 
     @Override

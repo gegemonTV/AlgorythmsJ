@@ -9,6 +9,6 @@ public class DSUsage {
         ints.add(2);
         ints.add(3);
         ints.add(2, 4);
-        System.out.println(ints);
+        System.out.println(ints.get(3));
     }
 }
