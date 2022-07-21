@@ -9,6 +9,13 @@ public class DSUsage {
         ints.add(2);
         ints.add(3);
         ints.add(2, 4);
-        System.out.println(ints.get(3));
+        System.out.println(ints);
+        System.out.println(ints.pop(1));
+        System.out.println(ints);
+        ints.add(5);
+        System.out.println(ints);
+        System.out.println(ints.pop());
+        System.out.println(ints);
+
     }
 }

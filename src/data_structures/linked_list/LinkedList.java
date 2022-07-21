@@ -47,6 +47,27 @@ public class LinkedList<T> {
         return nextNode.current;
     }
 
+    public T pop(int index) {
+        if (index > length - 1 || index < 0)
+            throw new IndexOutOfBoundsException("Index " + index + " out of range");
+        Node<T> nextNode = root;
+        for (int i = 0; i < index; i++){
+            nextNode = nextNode.next;
+        }
+        T res = nextNode.current;
+        nextNode.current = nextNode.next.current;
+        if (nextNode.next.next != null)
+            nextNode.next = nextNode.next.next.copy();
+        else
+            nextNode.next = null;
+        length--;
+        return res;
+    }
+
+    public T pop() {
+        return this.pop(length-1);
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
