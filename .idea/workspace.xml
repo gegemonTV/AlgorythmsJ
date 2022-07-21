@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7323b165-b23b-400f-805e-2ba8e8820f0b" name="Changes" comment="Created BinarySearch method">
-      <change afterPath="$PROJECT_DIR$/src/data_structures/linked_list/LinkedList.java" afterDir="false" />
+    <list default="true" id="7323b165-b23b-400f-805e-2ba8e8820f0b" name="Changes" comment="Started creating LinkedList data structure">
+      <change afterPath="$PROJECT_DIR$/src/data_structures/DSUsage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_structures/linked_list/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_structures/linked_list/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DSUsage">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="search.BinarySearch" />
       <module name="Algorythms" />
@@ -50,8 +50,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DSUsage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="data_structures.DSUsage" />
+      <module name="Algorythms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data_structures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DSUsage" />
         <item itemvalue="Application.BinarySearch" />
       </list>
     </recent_temporary>
@@ -79,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658378883302</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Started creating LinkedList data structure">
+      <created>1658383786898</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658383786898</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created BinarySearch" />
     <MESSAGE value="Created BinarySearch method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created BinarySearch method" />
+    <MESSAGE value="Started creating LinkedList data structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started creating LinkedList data structure" />
   </component>
 </project>

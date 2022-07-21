@@ -2,25 +2,58 @@ package data_structures.linked_list;
 
 public class LinkedList<T> {
 
-    Node<T> root = null;
+    Node<T> root;
+    int length = 0;
 
-    public LinkedList(){
+    public LinkedList() {
         root = new Node<>();
     }
 
-    public void add(T element){
-        if (root.current == null)
+    public void add(T element) {
+        if (root.current == null) {
             root.current = element;
-        else {
+            root.next = new Node<>();
+        } else {
             Node<T> nextNode = root.next;
             while (nextNode.next != null) {
                 nextNode = nextNode.next;
             }
-            nextNode.next = new Node<>(element);
+            nextNode.current = element;
+            nextNode.next = new Node<>();
         }
+        length++;
     }
 
-    class Node<E> {
+    public void add(int index, T element) {
+        if (index > length - 1)
+            throw new IndexOutOfBoundsException("Index " + index + " out of range");
+        Node<T> nextNode = root;
+        for (int i = 0; i < index; i++){
+            nextNode = nextNode.next;
+        }
+        Node<T> tempNode = nextNode.copy();
+        nextNode.current = element;
+        nextNode.next = tempNode;
+
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(root.current)
+                .append(" ");
+        if (root.next != null) {
+            Node<T> node = root.next;
+            while (node.next != null) {
+                sb.append(node.current)
+                        .append(" ");
+                node = node.next;
+            }
+        }
+        return sb.toString();
+    }
+
+    static class Node<E> {
         Node<E> next = null;
         E current = null;
 
@@ -35,6 +68,16 @@ public class LinkedList<T> {
 
         public Node() {
 
+        }
+
+        public Node<E> copy() {
+            Node<E> copy = new Node<>(current);
+            Node<E> next = this.next;
+            while (next != null) {
+                copy.next = new Node<>(next.current);
+                next = next.next;
+            }
+            return copy;
         }
     }
 }
