@@ -9,6 +9,13 @@ public class LinkedList<T> {
         root = new Node<>();
     }
 
+    public LinkedList<T> concat(LinkedList<T> additiveList) {
+        for (int i = 0; i < additiveList.length; i++) {
+            this.add(additiveList.get(i));
+        }
+        return this;
+    }
+
     public void add(T element) {
         if (root.current == null) {
             root.current = element;
